@@ -2,7 +2,8 @@
 
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { Toaster } from "sonner";
+import { Toaster } from 'react-hot-toast';
+
 import "@/public/css/style.css"; 
 import "@/public/css/bootstrap.min.css"; 
 

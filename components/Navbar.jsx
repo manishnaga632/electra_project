@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt, faSearch, faBars, faGlobeEurope, faMapMarkerAlt, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
+import Link from 'next/link';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [languageOpen, setLanguageOpen] = useState(false);
@@ -97,14 +97,11 @@ const Navbar = () => {
                             </button>
                             <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarCollapse">
                                 <div className="navbar-nav mx-0 mx-lg-auto bg-white">
-                                    <a href="/" className="nav-item nav-link active">Home</a>
-                                    <a href="about" className="nav-item nav-link">About</a>
-                                    <a href="service" className="nav-item nav-link">Service</a>
-                                    <a href="blog" className="nav-item nav-link">Blog</a>
-
-                                   
-
-                                    <a href="contact" className="nav-item nav-link">Contact</a>
+                                    <Link href="/" className="nav-item nav-link active">Home</Link>
+                                    <Link href="/about" className="nav-item nav-link">About</Link>
+                                    <Link href="/service" className="nav-item nav-link">Service</Link>
+                                    <Link href="/blog" className="nav-item nav-link">Blog</Link>
+                                    <Link href="/contact" className="nav-item nav-link">Contact</Link>
                                     <div className="nav-btn ps-3">
                                         <button
                                             className="btn-search btn btn-primary btn-md-square mt-2 mt-lg-0 mb-4 mb-lg-0 flex-shrink-0"
@@ -113,7 +110,7 @@ const Navbar = () => {
                                         >
                                             <FontAwesomeIcon icon={faSearch} />
                                         </button>
-                                        <a href="contact" className="btn btn-primary py-2 px-4 ms-0 ms-lg-3">Get Solution</a>
+                                        <Link href="/contact" className="btn btn-primary py-2 px-4 ms-0 ms-lg-3">Get Solution</Link>
                                     </div>
                                 </div>
                             </div>

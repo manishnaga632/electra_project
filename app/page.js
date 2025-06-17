@@ -13,11 +13,13 @@ export default function Home() {
     <>
       <Carousel />
       <Banner />
-      <Team />
       <Projects />
-      <Faq />
       <ModalSearch />
+      <Team />
+
       <Testimonial />
+      <Faq />
+
     </>
   );
 }
